@@ -1,0 +1,12 @@
+.validation-message {
+    display: none;
+    position: absolute;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+}
+
+.validation-message_show {
+    display: block;
+}

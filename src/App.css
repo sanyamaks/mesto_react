@@ -1,0 +1,33 @@
+.app {
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.app__header {
+    width: calc(100% - 400px);
+    margin: auto;
+}
+
+.app__profile {
+    width: calc(100% - 400px);
+    margin: auto;
+}
+
+.app__places {
+    width: calc(100% - 400px);
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .app__header {
+        width: 90%;
+    }
+
+    .app__profile {
+        width: 90%;
+    }
+
+    .app__places {
+        width: 90%;
+    }
+}

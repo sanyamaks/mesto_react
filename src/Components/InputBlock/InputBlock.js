@@ -11,7 +11,10 @@ const InputBlock = (props) => {
       <Input {...props} />
       {/* className="popup__input_type_link-url" */}
       {/* className="popup__input_type_name" */}
-      <ValidationMessage className="input-block__validation-message" isActive={isActive} />
+      <ValidationMessage
+        className="input-block__validation-message"
+        isActive={isActive}
+      />
     </div>
   );
 };

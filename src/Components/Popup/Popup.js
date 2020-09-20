@@ -1,19 +1,16 @@
 import React from 'react';
+import { createPortal } from 'react-dom';
 import './Popup.css';
 import closeButton from '../../images/close.svg';
-import FormPlaceCard from '../Form/FormPlaceCard';
-import FormProfileUpdate from '../Form/FormProfileUpdate';
-import FormAvatarUpdate from '../Form/FormAvatarUpdate';
 
-const Popup = () => (
+const Popup = (props) => (props.isOpen ? createPortal(
   <div className="popup">
     <div className="popup__content">
       <img className="popup__close" src={closeButton} alt="" />
-      {/* <FormPlaceCard /> */}
-      {/* <FormProfileUpdate /> */}
-      <FormAvatarUpdate />
+      {props.children}
     </div>
-  </div>
-);
+  </div>,
+  document.getElementById('modal-root'),
+) : null);
 
 export default Popup;
